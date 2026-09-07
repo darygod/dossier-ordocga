@@ -1,0 +1,54 @@
+# Credenciales y entorno local
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Salidas generadas (JSON, análisis Gemini)
+backend/data/*
+!backend/data/.gitkeep
+
+# Legacy: archivos en raíz antes de data/
+company_uk_*.json
+*_gemini_analysis_*.txt
+
+# Artefactos IDE / documentos temporales
+.snapshots/
+.spec_extract.txt
+*.spec_extract.txt
+.cursor/
+
+# Python tooling caches
+.pytest_cache/
+.schemathesis/
+perf/openapi-core-get.json
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.log
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Scripts de prueba privados y artefactos i18n generados
+backend/scripts/_*.py
+!backend/scripts/_bootstrap.py
+frontend/scripts/i18n-missing-*.json
+
+# Playwright / tests E2E (frontend)
+.playwright-browsers/
+playwright-report/
+test-results/
+
+# Frontend Next.js (frontend/)
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
